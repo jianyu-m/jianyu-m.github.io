@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jianyu-m
+  - hku-systems
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - hku-systems/cronus
+  - hku-systems/uranus
+  - hku-systems/kakute
+  - jianyu-m/Sharpvpn
+  - jianyu-m/damgard_jurik
