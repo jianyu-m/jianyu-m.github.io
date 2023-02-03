@@ -3,22 +3,32 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{apus,
-author = {Wang, Cheng and Jiang, Jianyu and Chen, Xusheng and Yi, Ning and Cui, Heming},
-title = {APUS: Fast and Scalable Paxos on RDMA},
-year = {2017},
-isbn = {9781450350280},
+@INPROCEEDINGS{cronus,
+  author={Jiang, Jianyu and Qi, Ji and Shen, Tianxiang and Chen, Xusheng and Zhao, Shixiong and Wang, Sen and Chen, Li and Zhang, Gong and Luo, Xiapu and Cui, Heming},
+  booktitle={2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
+  title={CRONUS: Fault-isolated, Secure and High-performance Heterogeneous Computing for Trusted Execution Environment}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={124-143},
+  doi={10.1109/MICRO56248.2022.00019}
+}
+@inproceedings{10.1145/3545948.3545972,
+author = {Jiang, Jianyu and Soriente, Claudio and Karame, Ghassan},
+title = {On the Challenges of Detecting Side-Channel Attacks in SGX},
+year = {2022},
+isbn = {9781450397049},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://dl.acm.org/doi/10.1145/3127479.3128609},
-doi = {10.1145/3127479.3128609},
-abstract = {State machine replication (SMR) uses Paxos to enforce the same inputs for a program (e.g., Redis) replicated on a number of hosts, tolerating various types of failures. Unfortunately, traditional Paxos protocols incur prohibitive performance overhead on server programs due to their high consensus latency on TCP/IP. Worse, the consensus latency of extant Paxos protocols increases drastically when more concurrent client connections or hosts are added. This paper presents APUS, the first RDMA-based Paxos protocol that aims to be fast and scalable to client connections and hosts. APUS intercepts inbound socket calls of an unmodified server program, assigns a total order for all input requests, and uses fast RDMA primitives to replicate these requests concurrently.We evaluated APUS on nine widely-used server programs (e.g., Redis and MySQL). APUS incurred a mean overhead of 4.3% in response time and 4.2% in throughput. We integrated APUS with an SMR system Calvin. Our Calvin-APUS integration was 8.2X faster than the extant Calvin-ZooKeeper integration. The consensus latency of APUS outperformed an RDMA-based consensus protocol by 4.9X. APUS source code and raw results are released on github.com/hku-systems/apus.},
-booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
-pages = {94--107},
-numpages = {14},
-keywords = {fault tolerance, software reliability, remote direct memory access, state machine replication},
-location = {Santa Clara, California},
-series = {SoCC '17}
+url = {https://dl.acm.org/doi/10.1145/3545948.3545972},
+doi = {10.1145/3545948.3545972},
+abstract = {Existing tools to detect side-channel attacks on Intel SGX are grounded on the observation that attacks affect the performance of the victim application. As such, all detection tools monitor the potential victim and raise an alarm if the witnessed performance (in terms of runtime, enclave interruptions, cache misses, etc.) is out of the ordinary. In this paper, we show that monitoring the performance of enclaves to detect side-channel attacks may not be effective. Our core intuition is that all monitoring tools are geared towards an adversary that interferes with the victim’s execution in order to extract the most number of secret bits (e.g., the entire secret) in one or few runs. They cannot, however, detect an adversary that leaks smaller portions of the secret—as small as a single bit—at each execution of the victim. In particular, by minimizing the information leaked at each run, the impact of any side-channel attack on the application’s performance is significantly lowered—ensuring that the detection tool does not detect an attack. By repeating the attack multiple times, each time on a different part of the secret, the adversary can recover the whole secret and remain undetected. Based on this intuition, we adapt known attacks leveraging page-tables and L3 cache to bypass existing detection mechanisms. We show experimentally how an attacker can successfully exfiltrate the secret key used in an enclave running various cryptographic routines of libgcrypt. Beyond cryptographic libraries, we also show how to compromise the predictions of enclaves running decision-tree routines of OpenCV. Our evaluation results suggest that performance-based detection tools do not deter side-channel attacks on SGX enclaves and that effective detection mechanisms are yet to be designed.},
+booktitle = {Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses},
+pages = {86-98},
+numpages = {13},
+keywords = {Intel Software Guard eXtensions (SGX), Side-channel Attacks},
+location = {Limassol, Cyprus},
+series = {RAID '22}
 }
 
 @inproceedings{uranus,
@@ -39,6 +49,19 @@ location = {Taipei, Taiwan},
 series = {ASIA CCS '20}
 }
 
+@inproceedings {soter,
+author = {Tianxiang Shen and Ji Qi and Jianyu Jiang and Xian Wang and Siyuan Wen and Xusheng Chen and Shixiong Zhao and Sen Wang and Li Chen and Xiapu Luo and Fengwei Zhang and Heming Cui},
+title = {{SOTER}: Guarding Black-box Inference for General Neural Networks at the Edge},
+booktitle = {2022 USENIX Annual Technical Conference (USENIX ATC 22)},
+year = {2022},
+isbn = {978-1-939133-29-68},
+address = {Carlsbad, CA},
+pages = {723--738},
+abstract={The prosperity of AI and edge computing has pushed more and more well-trained DNN models to be deployed on third-party edge devices to compose mission-critical applications. This necessitates protecting model confidentiality at untrusted devices, and using a co-located accelerator (e.g., GPU) to speed up model inference locally. Recently, the community has sought to improve the security with CPU trusted execution environments (TEE). However, existing solutions either run an entire model in TEE, suffering from extremely high inference latency, or take a partition-based approach to handcraft partial model via parameter obfuscation techniques to run on an untrusted GPU, achieving lower inference latency at the expense of both the integrity of partitioned computations outside TEE and accuracy of obfuscated parameters. We propose SOTER, the first system that can achieve model confidentiality, integrity, low inference latency and high accuracy in the partition-based approach. Our key observation is that there is often an \textit{associativity} property among many inference operators in DNN models. Therefore, SOTER automatically transforms a major fraction of associative operators into \textit{parameter-morphed}, thus \textit{confidentiality-preserved} operators to execute on untrusted GPU, and fully restores the execution results to accurate results with associativity in TEE. Based on these steps, SOTER further designs an \textit{oblivious fingerprinting} technique to safely detect integrity breaches of morphed operators outside TEE to ensure correct executions of inferences. Experimental results on six prevalent models in the three most popular categories show that, even with stronger model protection, SOTER achieves comparable performance with partition-based baselines while retaining the same high accuracy as insecure inference.},
+url = {https://www.usenix.org/conference/atc22/presentation/shen},
+publisher = {USENIX Association},
+month = jul,
+}
 @inproceedings{bidl,
   author = {Qi, Ji and Chen, Xusheng and Jiang, Yunpeng and Jiang, Jianyu and Shen, Tianxiang and Zhao, Shixiong and Wang, Sen and Zhang, Gong and Chen, Li and Au, Man Ho and Cui, Heming},
   title = {Bidl: A High-Throughput, Low-Latency Permissioned Blockchain Framework for Datacenter Networks},
@@ -55,6 +78,23 @@ series = {ASIA CCS '20}
   keywords = {high-performance blockchain workflows, permissioned blockchains, byzantine fault tolerance},
   location = {Virtual Event, Germany},
   series = {SOSP '21}
+}
+@inproceedings{apus,
+author = {Wang, Cheng and Jiang, Jianyu and Chen, Xusheng and Yi, Ning and Cui, Heming},
+title = {APUS: Fast and Scalable Paxos on RDMA},
+year = {2017},
+isbn = {9781450350280},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://dl.acm.org/doi/10.1145/3127479.3128609},
+doi = {10.1145/3127479.3128609},
+abstract = {State machine replication (SMR) uses Paxos to enforce the same inputs for a program (e.g., Redis) replicated on a number of hosts, tolerating various types of failures. Unfortunately, traditional Paxos protocols incur prohibitive performance overhead on server programs due to their high consensus latency on TCP/IP. Worse, the consensus latency of extant Paxos protocols increases drastically when more concurrent client connections or hosts are added. This paper presents APUS, the first RDMA-based Paxos protocol that aims to be fast and scalable to client connections and hosts. APUS intercepts inbound socket calls of an unmodified server program, assigns a total order for all input requests, and uses fast RDMA primitives to replicate these requests concurrently.We evaluated APUS on nine widely-used server programs (e.g., Redis and MySQL). APUS incurred a mean overhead of 4.3% in response time and 4.2% in throughput. We integrated APUS with an SMR system Calvin. Our Calvin-APUS integration was 8.2X faster than the extant Calvin-ZooKeeper integration. The consensus latency of APUS outperformed an RDMA-based consensus protocol by 4.9X. APUS source code and raw results are released on github.com/hku-systems/apus.},
+booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
+pages = {94--107},
+numpages = {14},
+keywords = {fault tolerance, software reliability, remote direct memory access, state machine replication},
+location = {Santa Clara, California},
+series = {SoCC '17}
 }
 
 @article{eges,
@@ -94,20 +134,6 @@ location = {Online Event, United Kingdom},
 series = {EuroSys '21}
 }
 
-@inproceedings {soter,
-author = {Tianxiang Shen and Ji Qi and Jianyu Jiang and Xian Wang and Siyuan Wen and Xusheng Chen and Shixiong Zhao and Sen Wang and Li Chen and Xiapu Luo and Fengwei Zhang and Heming Cui},
-title = {{SOTER}: Guarding Black-box Inference for General Neural Networks at the Edge},
-booktitle = {2022 USENIX Annual Technical Conference (USENIX ATC 22)},
-year = {2022},
-isbn = {978-1-939133-29-68},
-address = {Carlsbad, CA},
-pages = {723--738},
-abstract={The prosperity of AI and edge computing has pushed more and more well-trained DNN models to be deployed on third-party edge devices to compose mission-critical applications. This necessitates protecting model confidentiality at untrusted devices, and using a co-located accelerator (e.g., GPU) to speed up model inference locally. Recently, the community has sought to improve the security with CPU trusted execution environments (TEE). However, existing solutions either run an entire model in TEE, suffering from extremely high inference latency, or take a partition-based approach to handcraft partial model via parameter obfuscation techniques to run on an untrusted GPU, achieving lower inference latency at the expense of both the integrity of partitioned computations outside TEE and accuracy of obfuscated parameters. We propose SOTER, the first system that can achieve model confidentiality, integrity, low inference latency and high accuracy in the partition-based approach. Our key observation is that there is often an \textit{associativity} property among many inference operators in DNN models. Therefore, SOTER automatically transforms a major fraction of associative operators into \textit{parameter-morphed}, thus \textit{confidentiality-preserved} operators to execute on untrusted GPU, and fully restores the execution results to accurate results with associativity in TEE. Based on these steps, SOTER further designs an \textit{oblivious fingerprinting} technique to safely detect integrity breaches of morphed operators outside TEE to ensure correct executions of inferences. Experimental results on six prevalent models in the three most popular categories show that, even with stronger model protection, SOTER achieves comparable performance with partition-based baselines while retaining the same high accuracy as insecure inference.},
-url = {https://www.usenix.org/conference/atc22/presentation/shen},
-publisher = {USENIX Association},
-month = jul,
-}
-
 @INPROCEEDINGS {upa,
 author = {T. Li and J. Jiang and J. Qi and C. So and J. Ma and X. Chen and T. Shen and H. Cui and Y. Wang and P. Wang},
 booktitle = {2020 50th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
@@ -125,16 +151,7 @@ address = {Los Alamitos, CA, USA},
 month = {jul}
 }
 
-@INPROCEEDINGS{cronus,
-  author={Jiang, Jianyu and Qi, Ji and Shen, Tianxiang and Chen, Xusheng and Zhao, Shixiong and Wang, Sen and Chen, Li and Zhang, Gong and Luo, Xiapu and Cui, Heming},
-  booktitle={2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
-  title={CRONUS: Fault-isolated, Secure and High-performance Heterogeneous Computing for Trusted Execution Environment}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={124-143},
-  doi={10.1109/MICRO56248.2022.00019}
-}
+
 
 @ARTICLE{daenet,
   author={Shen, Tianxiang and Jiang, Jianyu and Jiang, Yunpeng and Chen, Xusheng and Qi, Ji and Zhao, Shixiong and Zhang, Fengwei and Luo, Xiapu and Cui, Heming},
@@ -178,22 +195,4 @@ series = {ACSAC '17}
   number={3},
   pages={489-506},
   doi={10.1109/TPDS.2021.3094364}
-}
-
-@inproceedings{10.1145/3545948.3545972,
-author = {Jiang, Jianyu and Soriente, Claudio and Karame, Ghassan},
-title = {On the Challenges of Detecting Side-Channel Attacks in SGX},
-year = {2022},
-isbn = {9781450397049},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://dl.acm.org/doi/10.1145/3545948.3545972},
-doi = {10.1145/3545948.3545972},
-abstract = {Existing tools to detect side-channel attacks on Intel SGX are grounded on the observation that attacks affect the performance of the victim application. As such, all detection tools monitor the potential victim and raise an alarm if the witnessed performance (in terms of runtime, enclave interruptions, cache misses, etc.) is out of the ordinary. In this paper, we show that monitoring the performance of enclaves to detect side-channel attacks may not be effective. Our core intuition is that all monitoring tools are geared towards an adversary that interferes with the victim’s execution in order to extract the most number of secret bits (e.g., the entire secret) in one or few runs. They cannot, however, detect an adversary that leaks smaller portions of the secret—as small as a single bit—at each execution of the victim. In particular, by minimizing the information leaked at each run, the impact of any side-channel attack on the application’s performance is significantly lowered—ensuring that the detection tool does not detect an attack. By repeating the attack multiple times, each time on a different part of the secret, the adversary can recover the whole secret and remain undetected. Based on this intuition, we adapt known attacks leveraging page-tables and L3 cache to bypass existing detection mechanisms. We show experimentally how an attacker can successfully exfiltrate the secret key used in an enclave running various cryptographic routines of libgcrypt. Beyond cryptographic libraries, we also show how to compromise the predictions of enclaves running decision-tree routines of OpenCV. Our evaluation results suggest that performance-based detection tools do not deter side-channel attacks on SGX enclaves and that effective detection mechanisms are yet to be designed.},
-booktitle = {Proceedings of the 25th International Symposium on Research in Attacks, Intrusions and Defenses},
-pages = {86-98},
-numpages = {13},
-keywords = {Intel Software Guard eXtensions (SGX), Side-channel Attacks},
-location = {Limassol, Cyprus},
-series = {RAID '22}
 }
