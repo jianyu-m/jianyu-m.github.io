@@ -1,31 +1,31 @@
 "heming":
   - firstname: ["Heming", "H.", "Heming Cui"]
-    url: https://i.cs.hku.hk/~heming/
+  - url: https://i.cs.hku.hk/~heming/
 
 "xusheng":
   - firstname: ["Xusheng", "X.", "Xusheng Chen"]
-    url: https://michaelxschen.github.io/
+  - url: https://michaelxschen.github.io/
 
 "jqi":
   - firstname: ["Ji", "J.", "Ji Qi"]
-    url: https://lililqth.github.io/
+  - url: https://lililqth.github.io/
 
 "cli":
   - firstname: ["Cheng", "C.", "Cheng Li"]
-    url: http://staff.ustc.edu.cn/~chengli7/
+  - url: http://staff.ustc.edu.cn/~chengli7/
 
 "xiapu":
   - firstname: ["Xiapu", "X.", "Xiapu Luo"]
-    url: https://www4.comp.polyu.edu.hk/~csxluo/
+  - url: https://www4.comp.polyu.edu.hk/~csxluo/
 
 "fengwei":
   - firstname: ["Fengwei", "F.", "Fengwei Zhang"]
-    url: https://fengweiz.github.io/
+  - url: https://fengweiz.github.io/
 
 "shixiong":
   - firstname: ["Shixiong", "S.", "Shixiong Zhao"]
-    url: https://i.cs.hku.hk/~sxzhao/
+  - url: https://i.cs.hku.hk/~sxzhao/
 
 "tianxiang":
   - firstname: ["Tianxiang", "T.", "Tianxiang Shen"]
-    url: https://tianxiang999.github.io/
+  - url: https://tianxiang999.github.io/
