@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: 
 # <a href='#'>The University of Hong Kong</a>. Address. Contacts. Moto. Etc.
