@@ -4,3 +4,23 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"Micro'22":
+  url: https://www.microarch.org/micro55/
+  color: "green"
+
+"SOSP'21":
+  url: https://sosp2021.mpi-sws.org/
+  color: "green"
+
+"ATC'22":
+  url: https://www.usenix.org/conference/atc22
+  color: "green"
+
+"TPDS'22":
+  url: https://www.computer.org/csdl/journal/td
+  color: "green"
+
+"EuroSys'21":
+  url: https://2021.eurosys.org/
+  color: "green"
