@@ -1,9 +1,3 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
 
 "Micro’22":
   url: https://www.microarch.org/micro55/
@@ -24,3 +18,34 @@
 "EuroSys’21":
   url: https://2021.eurosys.org/
   color: "#70AD47"
+
+"SoCC’17":
+  url: https://2021.eurosys.org/
+  color: "#70AD47"
+
+"Performance’21":
+  url: https://2021.eurosys.org/
+  color: "#70AD47"
+
+
+
+"TDSC’22":
+  url: https://www.computer.org/csdl/journal/tq
+  color: "#ED7D31"
+
+"RAID’22":
+  url: https://raid2022.cs.ucy.ac.cy/
+  color: "#ED7D31"
+
+"AsiaCCS’20":
+  url: https://asiaccs2020.cs.nthu.edu.tw/
+  color: "#ED7D31"
+
+"DSN’20":
+  url: https://dsn2020.webs.upv.es/
+  color: "#ED7D31"
+
+"ACSAC’17":
+  url: https://www.acsac.org/2017/
+  color: "#ED7D31"
+
