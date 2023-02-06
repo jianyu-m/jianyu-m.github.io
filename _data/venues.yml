@@ -1,50 +1,51 @@
 
-"Micro":
+"Micro’22":
   url: https://www.microarch.org/micro55/
   color: "#70AD47"
 
-"SOSP":
+"SOSP’21":
   url: https://sosp2021.mpi-sws.org/
   color: "#70AD47"
 
-"ATC":
+"ATC’22":
   url: https://www.usenix.org/conference/atc22
   color: "#70AD47"
 
-"TPDS":
+"TPDS’22":
   url: https://www.computer.org/csdl/journal/td
   color: "#70AD47"
 
-"EuroSys":
+"EuroSys’21":
   url: https://2021.eurosys.org/
   color: "#70AD47"
 
-"SoCC":
+"SoCC’17":
   url: http://acmsocc.org/2017/
   color: "#70AD47"
 
-"Performance":
+"Performance’21":
   url: https://www.performance2021.deib.polimi.it/
   color: "#70AD47"
 
 
-"TDSC":
+
+"TDSC’22":
   url: https://www.computer.org/csdl/journal/tq
   color: "#ED7D31"
 
-"RAID":
+"RAID’22":
   url: https://raid2022.cs.ucy.ac.cy/
   color: "#ED7D31"
 
-"AsiaCCS":
+"AsiaCCS’20":
   url: https://asiaccs2020.cs.nthu.edu.tw/
   color: "#ED7D31"
 
-"DSN":
+"DSN’20":
   url: https://dsn2020.webs.upv.es/
   color: "#ED7D31"
 
-"ACSAC":
+"ACSAC’17":
   url: https://www.acsac.org/2017/
   color: "#ED7D31"
 
