@@ -2,7 +2,6 @@
 ---
 
 @string{aps = {American Physical Society,}}
-@string{micro22 = {American Physical Society,}}
 
 @INPROCEEDINGS{cronus,
   author={Jiang, Jianyu and Qi, Ji and Shen, Tianxiang and Chen, Xusheng and Zhao, Shixiong and Wang, Sen and Chen, Li and Zhang, Gong and Luo, Xiapu and Cui, Heming},
@@ -14,7 +13,8 @@
   pages={124-143},
   doi={10.1109/MICRO56248.2022.00019},
   selected={true},
-  abbr={Micro'22}
+  abbr={Micro'22},
+  abstract={With the trend of processing a large volume of sensitive data on PaaS services (e.g., DNN training), a TEE architecture that supports general heterogeneous accelerators, enables spatial sharing on one accelerator, and enforces strong isolation across accelerators is highly desirable. However, none of the existing TEE solutions meet all three requirements. In this paper, we propose CRONUS, the first TEE architecture that achieves the three crucial requirements. The key idea of CRONUS is to partition heterogeneous computation into isolated TEE enclaves, where each enclave encapsulates only one kind of computation (e.g., GPU computation), and multiple enclaves can spatially share an accelerator. Then, CRONUS constructs heterogeneous computing using remote procedure calls (RPCs) among enclaves. With CRONUS, each accelerator’s hardware and its software stack are strongly isolated from others’, and each enclave trusts only its own hardware. To tackle the security challenge caused by inter-enclave interactions, we design a new streaming remote procedure call abstraction to enable secure RPCs with high performance. CRONUS is software-based, making it general to diverse accelerators. We implemented CRONUS on ARM TrustZone. Evaluation on diverse workloads with CPUs, GPUs and NPUs shows that, CRONUS achieves less than 7.1% extra computation time compared to native (unprotected) executions.}
 }
 @inproceedings{10.1145/3545948.3545972,
 author = {Jiang, Jianyu and Soriente, Claudio and Karame, Ghassan},
