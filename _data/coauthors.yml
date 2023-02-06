@@ -17,6 +17,9 @@
   - firstname: ["Cheng", "C."]
     url: http://staff.ustc.edu.cn/~chengli7/
 
+  - firstname: ["Tsz On"]
+    url: https://litszon.github.io/
+
 "Luo":
   - firstname: ["Xiapu", "X."]
     url: https://www4.comp.polyu.edu.hk/~csxluo/
@@ -41,10 +44,6 @@
   - firstname: ["Reynold"]
     url: https://www.reynold.hku.hk/
 
-"Li":
-  - firstname: ["Tsz On"]
-    url: https://litszon.github.io/
-
 "Wang":
   - firstname: ["Peng"]
     url: https://scholar.google.com/citations?user=OZqj0dYAAAAJ
@@ -55,7 +54,7 @@
   - firstname: ["Yuexuan"]
     url: https://person.zju.edu.cn/en/amywang
 
-  - firstname: ["Cho-li"]
+  - firstname: ["Cho-Li"]
     url: https://i.cs.hku.hk/~clwang/
 
 "Karame":
