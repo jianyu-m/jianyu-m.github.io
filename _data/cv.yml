@@ -85,7 +85,13 @@
     - title: Trusted Execution Environment (TEE)
       items:
         - Cronus [Micro'22]
+        - Soter [ATC'22]
+        - DAENet [TDSC'22]
+        - Eges [Performance'21]
         - Uranus [AsiaCCS'20]
+    - title: AI systems
+      items:
+        - VPipe [TPDS'22]
 
 - title: Academic Services
   type: nested_list
