@@ -109,6 +109,25 @@ series = {SoCC '17},
 abbr={Socc'17}
 }
 
+@inproceedings{dast,
+author = {Chen, Xusheng and Song, Haoze and Jiang, Jianyu and Ruan, Chaoyi and Li, Cheng and Wang, Sen and Zhang, Gong and Cheng, Reynold and Cui, Heming},
+title = {Achieving Low Tail-Latency and High Scalability for Serializable Transactions in Edge Computing},
+year = {2021},
+isbn = {9781450383349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://dl.acm.org/doi/10.1145/3447786.3456238},
+doi = {10.1145/3447786.3456238},
+abstract = {A distributed database utilizing the wide-spread edge computing servers to provide low-latency data access with the serializability guarantee is highly desirable for emerging edge computing applications. In an edge database, nodes are divided into regions, and a transaction can be categorized as intra-region (IRT) or cross-region (CRT) based on whether it accesses data in different regions. In addition to serializability, we insist that a practical edge database should provide low tail latency for both IRTs and CRTs, and such low latency must be scalable to a large number of regions. Unfortunately, none of existing geo-replicated serializable databases or edge databases can meet such requirements.In this paper, we present Dast (Decentralized Anticipate and STretch), the first edge database that can meet the stringent performance requirements with serializability. Our key idea is to order transactions by anticipating when they are ready to execute: Dast binds an IRT to the latest timestamp and binds a CRT to a future timestamp to avoid the coordination of CRTs blocking IRTs. Dast also carries a new stretchable clock abstraction to tolerate inaccurate anticipations and to handle cross-region data reads. Our evaluation shows that, compared to three relevant serializable databases, Dast's 99-percentile latency was 87.9%~93.2% lower for IRTs and 27.7%~70.4% lower for CRTs; Dast's low latency is scalable to a large number of regions.},
+booktitle = {Proceedings of the Sixteenth European Conference on Computer Systems},
+pages = {210--227},
+numpages = {18},
+keywords = {distributed transaction, tail-latency, scalability, edge computing},
+location = {Online Event, United Kingdom},
+series = {EuroSys '21},
+abbr={EuroSys'21}
+}
+
 @article{eges,
 author = {Chen, Xusheng and Zhao, Shixiong and Qi, Ji and Jiang, Jianyu and Song, Haoze and Wang, Cheng and On Li, Tsz and Hubert Chan, T-H. and Zhang, Fengwei and Luo, Xiapu and Wang, Sen and Zhang, Gong and Cui, Heming},
 title = {Efficient and DoS-Resistant Consensus for Permissioned Blockchains},
@@ -127,25 +146,6 @@ month = {mar},
 pages = {61--62},
 numpages = {2},
   abbr={Performance'21}
-}
-
-@inproceedings{dast,
-author = {Chen, Xusheng and Song, Haoze and Jiang, Jianyu and Ruan, Chaoyi and Li, Cheng and Wang, Sen and Zhang, Gong and Cheng, Reynold and Cui, Heming},
-title = {Achieving Low Tail-Latency and High Scalability for Serializable Transactions in Edge Computing},
-year = {2021},
-isbn = {9781450383349},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://dl.acm.org/doi/10.1145/3447786.3456238},
-doi = {10.1145/3447786.3456238},
-abstract = {A distributed database utilizing the wide-spread edge computing servers to provide low-latency data access with the serializability guarantee is highly desirable for emerging edge computing applications. In an edge database, nodes are divided into regions, and a transaction can be categorized as intra-region (IRT) or cross-region (CRT) based on whether it accesses data in different regions. In addition to serializability, we insist that a practical edge database should provide low tail latency for both IRTs and CRTs, and such low latency must be scalable to a large number of regions. Unfortunately, none of existing geo-replicated serializable databases or edge databases can meet such requirements.In this paper, we present Dast (Decentralized Anticipate and STretch), the first edge database that can meet the stringent performance requirements with serializability. Our key idea is to order transactions by anticipating when they are ready to execute: Dast binds an IRT to the latest timestamp and binds a CRT to a future timestamp to avoid the coordination of CRTs blocking IRTs. Dast also carries a new stretchable clock abstraction to tolerate inaccurate anticipations and to handle cross-region data reads. Our evaluation shows that, compared to three relevant serializable databases, Dast's 99-percentile latency was 87.9%~93.2% lower for IRTs and 27.7%~70.4% lower for CRTs; Dast's low latency is scalable to a large number of regions.},
-booktitle = {Proceedings of the Sixteenth European Conference on Computer Systems},
-pages = {210--227},
-numpages = {18},
-keywords = {distributed transaction, tail-latency, scalability, edge computing},
-location = {Online Event, United Kingdom},
-series = {EuroSys '21},
-abbr={EuroSys'21}
 }
 
 @INPROCEEDINGS {upa,
