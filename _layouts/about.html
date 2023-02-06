@@ -40,11 +40,8 @@ layout: default
             {{ content }}
           </div>
 
-          {% if page.interests -%}
-            <h2><a href="{{ '/' | relative_url }}" style="color: inherit;">Research Highlight</a></h2>
-            {% for interest in entry.interests %}
-            <p> {{ interest.topic }}: Cronus [Micro'22], Uranus [AsiaCCS'20] </p>
-            {% endfor %}
+          {% if page.cv -%}
+            {%- include cv.html %}
           {%- endif %}
 
           <!-- News -->
@@ -57,10 +54,6 @@ layout: default
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
-          {%- endif %}
-
-          {% if page.cv -%}
-            {%- include cv.html %}
           {%- endif %}
           
           <!-- Social -->
