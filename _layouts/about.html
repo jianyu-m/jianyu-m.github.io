@@ -43,8 +43,8 @@ layout: default
           {% if page.interests -%}
             <h2><a href="{{ '/' | relative_url }}" style="color: inherit;">Research Highlight</a></h2>
             {% for interest in entry.interests %}
-            <p> {{ interest }}: Cronus [Micro'22], Uranus [AsiaCCS'20] </p>
-          {% endfor %}
+            <p> {{ interest.topic }}: Cronus [Micro'22], Uranus [AsiaCCS'20] </p>
+            {% endfor %}
           {%- endif %}
 
           <!-- News -->
