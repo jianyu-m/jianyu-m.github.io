@@ -21,6 +21,6 @@ cv: true
 years: [2022, 2021, 2020, 2017]
 ---
 
-Jianyu Jiang got his PhD from the Computer Science Department at The University of Hong Kong. He is working on topics in large scale privacy-preserving computation platform under the supervision of [Dr. Heming Cui](https://i.cs.hku.hk/~heming). He has rich research experience at Trusted Execution Environment (TEE) such as SGX and TrustZone. He is also familiar with Differential Privacy, side-channel attacks and blockchains. I also help with some research projects on consensus, distributed transactions and AI trainings.
+Jianyu Jiang got his PhD from the Computer Science Department at The University of Hong Kong, supervised by [Dr. Heming Cui](https://i.cs.hku.hk/~heming). His research focuses on building secure systems in the datacenter and at the edge, using hardware-based techniques (e.g., trusted execution environment such as SGX and TrustZone), and software-based mechanism (e.g., information flow tracking, differential privacy and cryptographic tools). I am also interested in building reliable and strongly consistent distributed systems, including fault tolerance systems, distributed transaction processing systems, and blockchain systems. I received an distinguished (best) paper award from ACSAC ’17 on building a distributed dataflow system (i.e., Kakute) for Spark.
 
 Prior his PhD, Jianyu receive his Bachlor's Degree in Computer Science Department at Xi'an Jiaotong University, under the supervision of [Professor Qi Yong](http://www.cs.xjtu.edu.cn/info/1267/1425.htm).
