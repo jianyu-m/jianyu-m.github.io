@@ -58,7 +58,11 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
+            {%- if entry.author_note -%}
+            <em>{{author.first}} {{author.last}}*</em>
+            {%- else -%}
             <em>{{author.first}} {{author.last}}</em>
+            {%- endif -%}
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -128,6 +132,12 @@
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {%- if entry.author_note -%}
+          <div class="author_note">
+            <em>*{{ entry.author_note }}</em>
+          </div>
+        {%- endif -%}
+        
 
           <!-- Links/Buttons -->
           <div class="links">
