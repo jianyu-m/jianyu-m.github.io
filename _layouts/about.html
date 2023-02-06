@@ -40,10 +40,6 @@ layout: default
             {{ content }}
           </div>
 
-          {% if page.cv -%}
-            {%- include cv.html %}
-          {%- endif %}
-
           <!-- News -->
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
@@ -56,6 +52,10 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
           
+          {% if page.cv -%}
+            {%- include cv.html %}
+          {%- endif %}
+
           <!-- Social -->
           {%- if page.social %}
             <div class="social">

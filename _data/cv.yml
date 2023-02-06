@@ -79,20 +79,6 @@
 #       items: 
 #         - Max Planck Medal
 
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: Trusted Execution Environment (TEE)
-      items:
-        - Cronus [Micro'22]
-        - Soter [ATC'22]
-        - DAENet [TDSC'22]
-        - Eges [Performance'21]
-        - Uranus [AsiaCCS'20]
-    - title: Distributed Systems
-      items:
-        - VPipe [TPDS'22]
-
 - title: Academic Services
   type: nested_list
   contents:
