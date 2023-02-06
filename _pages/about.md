@@ -18,6 +18,7 @@ news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 cv: true
+years: [2022, 2021, 2020, 2017]
 ---
 
 Jianyu Jiang got his PhD from the Computer Science Department at The University of Hong Kong. He is working on topics in large scale privacy-preserving computation platform under the supervision of [Dr. Heming Cui](https://i.cs.hku.hk/~heming). He has rich research experience at Trusted Execution Environment (TEE) such as SGX and TrustZone. He is also familiar with Differential Privacy, side-channel attacks and blockchains. I also help with some research projects on consensus, distributed transactions and AI trainings.
