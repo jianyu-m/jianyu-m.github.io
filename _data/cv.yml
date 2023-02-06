@@ -84,8 +84,8 @@
   contents:
     - title: Trusted Execution Environment (TEE)
       items:
-        - Cronus, Micro'22
-        - Uranus, AsiaCCS'20
+        - Cronus [Micro'22]
+        - Uranus [AsiaCCS'20]
 
 - title: Academic Services
   type: nested_list
