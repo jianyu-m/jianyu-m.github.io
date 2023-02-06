@@ -19,6 +19,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 cv: true
 years: [2022, 2021, 2020, 2017]
+
+interests:
+  - topic: Trusted Execution Environment (TEE)
+    items:
+      - name: Cronus
+        conf: Micro'22
+        key: cronus
+      - name: Uranus
+        conf: AsiaCCS'21, deployed
+        key: uranus
 ---
 
 Jianyu Jiang got his PhD from the Computer Science Department at The University of Hong Kong, supervised by [Dr. Heming Cui](https://i.cs.hku.hk/~heming). His research focuses on building secure systems in the datacenter and at the edge, using hardware-based techniques (e.g., trusted execution environment such as SGX and TrustZone), and software-based mechanism (e.g., information flow tracking, differential privacy and cryptographic tools). I am also interested in building reliable and strongly consistent distributed systems, including fault tolerance systems, distributed transaction processing systems, and blockchain systems. I received an distinguished (best) paper award from ACSAC ’17 on building a distributed dataflow system (i.e., Kakute) for Spark.
