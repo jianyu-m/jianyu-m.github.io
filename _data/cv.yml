@@ -79,7 +79,7 @@
 #       items: 
 #         - Max Planck Medal
 
-title: Research Interests
+- title: Research Interests
   type: nested_list
   contents:
     - title: Trusted Execution Environment (TEE)
