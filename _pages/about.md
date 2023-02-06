@@ -9,10 +9,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  address: >
-    <p>Room 414</p>
-    <p>Chow Yei Ching Build</p>
-    <p>The University of Hong Kong</p>
+  address:
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
