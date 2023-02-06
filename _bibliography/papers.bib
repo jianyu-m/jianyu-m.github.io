@@ -73,7 +73,8 @@ html = {https://www.usenix.org/conference/atc22/presentation/shen},
 publisher = {USENIX Association},
 month = jul,
 selected={true},
-  abbr={ATC'22}
+abbr={ATC'22},
+author_note={Corresponding author.}
 }
 @inproceedings{bidl,
   author = {Qi, Ji and Chen, Xusheng and Jiang, Yunpeng and Jiang, Jianyu and Shen, Tianxiang and Zhao, Shixiong and Wang, Sen and Zhang, Gong and Chen, Li and Au, Man Ho and Cui, Heming},
@@ -178,7 +179,7 @@ abbr={DSN'20}
 
 
 @ARTICLE{daenet,
-  author={Shen, Tianxiang and Jiang, Jianyu and Jiang, Yunpeng and Chen, Xusheng and Qi, Ji and Zhao, Shixiong and Zhang, Fengwei and Luo, Xiapu and Cui, Heming},
+  author={Shen*, Tianxiang and Jiang, Jianyu and Jiang, Yunpeng and Chen, Xusheng and Qi, Ji and Zhao, Shixiong and Zhang, Fengwei and Luo, Xiapu and Cui, Heming},
   journal={IEEE Transactions on Dependable and Secure Computing}, 
   title={DAENet: Making Strong Anonymity Scale in a Fully Decentralized Network}, 
   abstract={Traditional anonymous networks (e.g., Tor) are vulnerable to traffic analysis attacks that monitor the whole network traffic to determine which users are communicating. To preserve user anonymity against traffic analysis attacks, the emerging mix networks mess up the order of packets through a set of centralized and explicit shuffling nodes. However, this centralized design of mix networks is insecure against targeted DoS attacks that can completely block these shuffling nodes. In this article, we present DAENet , an efficient mix network that resists both targeted DoS attacks and traffic analysis attacks with a new abstraction called Stealthy Peer-to-Peer (P2P) Network . The stealthy P2P network effectively hides the shuffling nodes used in a routing path into the whole network, such that adversaries cannot distinguish specific shuffling nodes and conduct targeted DoS attacks to block these nodes. In addition, to handle traffic analysis attacks, we leverage the confidentiality and integrity protection of Intel SGX to ensure trustworthy packet shuffles at each distributed host and use multiple routing paths to prevent adversaries from tracking and revealing user identities. We show that our system is scalable with moderate latency (2.2s) when running in a cluster of 10,000 participants and is robust in the case of machine failures, making it an attractive new design for decentralized anonymous communication. DAENet ’s code is released on https://github.com/hku-systems/DAENet .},
