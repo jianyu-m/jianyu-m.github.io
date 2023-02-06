@@ -137,6 +137,12 @@
             <b><em>*{{ entry.author_note }}</em></b>
           </div>
         {%- endif -%}
+        {%- if entry.highlight -%}
+        <div class="highlight">
+          <b>&#9733;{{ entry.highlight }}</b>
+        </div>
+      {%- endif -%}
+        
         
 
           <!-- Links/Buttons -->
