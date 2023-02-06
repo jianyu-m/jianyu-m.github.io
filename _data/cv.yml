@@ -80,10 +80,12 @@
 #         - Max Planck Medal
 
 title: Research Interests
-  - topic: Trusted Execution Environment (TEE)
-    items:
-      - Cronus [Micro'22]
-      - Uranus [AsiaCCS'20,deploy]
+  type: nested_list
+  contents:
+    - title: Trusted Execution Environment (TEE)
+      items:
+        - Cronus [Micro'22]
+        - Uranus [AsiaCCS'20,deploy]
 
 - title: Academic Services
   type: nested_list
