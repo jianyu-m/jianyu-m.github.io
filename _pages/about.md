@@ -25,10 +25,10 @@ Prior his PhD, Jianyu receive his Bachlor's Degree in Computer Science Departmen
 ### Research Interests
 
 **Trusted Execution Environment (TEE)**
-  + Cronus [Micro'22](https://jianyu-m.github.io#cronus) - A TEE architecture supporting diverse accelerators.
-  + [RAID'22](https://jianyu-m.github.io#janitor) - A fine-grained side-channel attack on SGX.
+  + Cronus [[Micro'22](https://jianyu-m.github.io#cronus)] - A TEE architecture supporting diverse accelerators.
+  + [[RAID'22](https://jianyu-m.github.io#janitor)] - A fine-grained side-channel attack on SGX.
   + Soter [ATC'22](https://jianyu-m.github.io#soter) - A secure DNN inference system using TEE.
-  + DAENet [TDSC'22](https://jianyu-m.github.io#daenet) - A anonymous communication system using TEE.
+  + DAENet [[TDSC'22](https://jianyu-m.github.io#daenet)] - A anonymous communication system using TEE.
   + Eges [Performance'21](https://jianyu-m.github.io#eges) - A BFT consensus protocol using TEE.
   + Uranus [AsiaCCS'20,deployed](https://jianyu-m.github.io#uranus) - A secure and unified Java execution system within TEE.
 
