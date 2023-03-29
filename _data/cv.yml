@@ -82,6 +82,7 @@
 - title: Academic Services
   type: nested_list
   contents:
+    - title: Artifact Evaluation Co-chair @ OSDI'23 & ATC'23
     - title: Artifact Evaluation Committee (AEC)
       items: 
         - SOSP'21 AEC
