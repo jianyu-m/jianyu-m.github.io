@@ -18,7 +18,7 @@ cv: true
 years: [2022, 2021, 2020, 2017]
 ---
 
-I got my PhD from the Computer Science Department at The University of Hong Kong, supervised by [Dr. Heming Cui](https://i.cs.hku.hk/~heming). Prior my PhD, I received my Bachlor's Degree in Computer Science Department at Xi'an Jiaotong University, under the supervision of [Professor Qi Yong](http://www.cs.xjtu.edu.cn/info/1267/1425.htm).
+I am currently a Researcher @ 2012 Theory Lab, Huawei Hong Kong Research Center, working on System security and Distributed system (AI, Databases and Blockchain). I got my PhD from the Computer Science Department at The University of Hong Kong, supervised by [Dr. Heming Cui](https://i.cs.hku.hk/~heming). Prior my PhD, I received my Bachlor's Degree in Computer Science Department at Xi'an Jiaotong University, under the supervision of [Professor Qi Yong](http://www.cs.xjtu.edu.cn/info/1267/1425.htm).
 
 ### Research Highlights
 
